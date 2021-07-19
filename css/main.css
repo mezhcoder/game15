@@ -16,7 +16,7 @@
     position: relative;
 }
 
-.ceil {
+.cell {
     width: 100px;
     height: 100px;
 
@@ -32,6 +32,6 @@
     align-items: center;
 }
 
-.ceil:hover {
+.cell:hover {
     background-color: aquamarine;
 }

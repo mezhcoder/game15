@@ -3,13 +3,12 @@ const ceilSize = 100;
 
 const Game = function () {
     const emptyField = {
-        value: 0,
-        top: 0,
-        left: 0
+        value: 16,
+        top: 3,
+        left: 3
     };
 
     const ceils = [];
-    ceils.push(emptyField);
 
     function move(index) {
         const ceil = ceils[index];
@@ -29,45 +28,48 @@ const Game = function () {
         ceil.left = emptyLeft;
         ceil.top = emptyTop;
 
-        const isFinished = ceils.every(ceil => {
-            return ceil.value === ceil.top * 4 + ceil.left;
+        console.log({top: ceil.top, left: ceil.left});
+
+        const isFinished = ceils.every(cell => {
+            console.log((cell.top*4 + cell.left)+1);
+            return cell.value === (cell.top*4 + cell.left) + 1;
         });
 
         if (isFinished) {
             alert("Ты выиграл");
         }
+
     }
-
     this.generate = function(isRandom) {
-        //сортировка чисел
-        const numbers = [...Array(15).keys()];
-
-        if (isRandom)
+        const numbers = [...Array(15).keys()].map(x => x+1);
+        if (isRandom) {
             numbers.sort(() => Math.random() - 0.5);
+        }
 
-        for (let i = 1; i < 16; ++i) {
-            const ceil = document.createElement('div');
-            const value = numbers[i-1]+1;
-            ceil.className = 'ceil';
-            ceil.innerHTML = value;
+        for (let i = 0; i < 15; ++i) {
+            const cell = document.createElement('div');
+            const value = numbers[i];
+            cell.className = 'cell';
+            cell.innerHTML = value;
 
             const left = i % 4; //колонки (columns)
             const top = (i-left)/4; //строки (row)
 
             ceils.push({
                 value: value,
-                element: ceil,
+                element: cell,
                 top: top,
                 left: left
             });
 
-            ceil.style.left = `${left * ceilSize}px`;
-            ceil.style.top = `${top * ceilSize}px`;
+            cell.style.left = `${left * ceilSize}px`;
+            cell.style.top = `${top * ceilSize}px`;
 
-            field.append(ceil);
-            ceil.addEventListener('click', () => {
+            field.append(cell);
+            cell.addEventListener('click', () => {
                 move(i);
             });
         }
+        ceils.push(emptyField);
     }
 }
