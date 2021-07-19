@@ -1,4 +1,4 @@
-![game15](https://user-images.githubusercontent.com/49750349/126107159-d496034e-1145-4d47-a7b2-e045572450a3.png)
+![game15](https://user-images.githubusercontent.com/49750349/126107230-70f569e7-9536-4768-90cc-28af9df3cea5.jpg)
 
 # Game 15
 <h3>
