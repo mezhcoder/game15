@@ -35,3 +35,21 @@
 .cell:hover {
     background-color: aquamarine;
 }
+
+.btnRestartGame {
+    margin-top: 25px;
+    padding-top: 6px;
+    text-decoration: none;
+    text-align: center;
+
+    color: #000;
+    border: 2px solid black;
+    font-size: 20px;
+
+    width: 150px;
+    height: 40px;
+}
+
+.btnRestartGame:hover {
+    border: 2px solid orangered;
+}
