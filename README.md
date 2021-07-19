@@ -1,3 +1,5 @@
+![game15](https://user-images.githubusercontent.com/49750349/126107230-70f569e7-9536-4768-90cc-28af9df3cea5.jpg)
+
 # Game 15
 <h3>
 Игра 15 известная всем, как пятнашки
@@ -14,8 +16,5 @@ https://mezhcoder.github.io/game15/
 let game = new Game();
 game.generate(false); //если установить true поле будет сгенерировано случайно
 ```
-#В разработке участвовало три программиста</br>
-<a href="https://vk.com/zhcoder">Жиденко Никита</a></br>
-<a href="https://vk.com/ne_pal1">Фирсов Андрей</a></br>
-<a href="https://vk.com/id612386666">Гребенников Владимир</a></br>
-ДВФУ практика
+
+<i>ДВФУ практика</i>

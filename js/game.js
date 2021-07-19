@@ -28,10 +28,7 @@ const Game = function () {
         ceil.left = emptyLeft;
         ceil.top = emptyTop;
 
-        console.log({top: ceil.top, left: ceil.left});
-
         const isFinished = ceils.every(cell => {
-            console.log((cell.top*4 + cell.left)+1);
             return cell.value === (cell.top*4 + cell.left) + 1;
         });
 
