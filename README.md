@@ -16,8 +16,5 @@ https://mezhcoder.github.io/game15/
 let game = new Game();
 game.generate(false); //если установить true поле будет сгенерировано случайно
 ```
-# В разработке участвовали</br>
-<a href="https://vk.com/zhcoder">Жиденко Никита</a></br>
-<a href="https://vk.com/ne_pal1">Фирсов Андрей</a></br>
-<a href="https://vk.com/id612386666">Гребенников Владимир</a></br>
+
 <i>ДВФУ практика</i>
